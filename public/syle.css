@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@300&family=Montserrat:wght@100&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s;
+}
+header a{
+    text-decoration: none;
+}
+.logo-name{
+    font-weight: 600; 
+    font-size: 30px;
+    color :#1DA1F2;
+    font-family: 'Dancing Script','cursive';
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap : 1.5rem;
+}
+.nav-item{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-family:"Montserrat",sans-serif;
+     font-weight: bold;
+}
+
+.nav-item:hover{
+    color: #1DA1F2;
+    transition:all  0.3s ease-in;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    animation: slideup 1000ms ease-in 0s 1  both;
+}
+
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 7% !important;
+    position: relative;
+}
+.aboutSection h1{
+    font-size:70px;
+    font-family:"Montserrat",sans-serif;
+    line-height: 1.1;
+    flex: 1 1;
+}
+.devsvg{
+    width: 50%;
+    max-height: 46vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    color: #868e96;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    gap: 0.4rem;
+    justify-content: start;
+    align-items: center;
+}
+/* #1DA1F2 */
+.btn{
+    background-color:#1DA1F2;
+    border: 1px solid #1DA1F2;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    padding: 13px 22px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+}
+.link-btn{
+    text-decoration: none;
+}
+.btn:hover{
+    transform: translate3d(0,-3px,0);
+    background-color: transparent;
+    color: #1DA1F2;
+}
+.aboutWork{
+    display: flex;
+    margin: 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+.workstats{
+    width: 64%;
+}
+.workstats h1{
+  font-family:"Montserrat",sans-serif;
+  font-size: 56px;
+  font-weight: 900;
+}
+.workstats p{
+    font-family:"Montserrat",sans-serif;  
+    color: #868e96;
+    font-weight: 600;
+    font-size: 24px;
+}
+.animation-container{
+    width: 50%;
+}
+.text-tag{
+   
+    display: grid;
+    grid-template-columns: repeat(7,100px);
+    gap: 20px;
+}
+.text-tag div{
+    text-align: center;
+}
+.animation-container img{
+    width: 500px;
+    margin-left: -7%;    
+}
+
+/*proficency and skills section  */
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 7%;
+}
+.meter{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    outline: 1px solid #1DA1F2;
+}
+.left-skills-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+.skills-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+.meter-fill{
+    display: block;
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #1DA1F2;
+}
+.frontend{
+    width: 84%;
+}
+.backend{
+    width: 90%;
+}
+.dsa{
+    width: 93%;
+}
+.full-stack{
+    width: 87.5%;
+}
+.proficenacy{
+ font-family:"Montserrat",sans-serif;
+ font-size: 56px;
+ font-weight: 600;
+}
+.skills-bar{
+    font-family: "Montserrat",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.right-animation-container{
+    width: 50%;
+}
+.skills-img{
+    width: 90%;
+    padding-top: 20%;
+}
+
+
+
+@keyframes slideup {
+    0% {
+      opacity: 0;
+      transform: translate3D(0px, 40px, 0px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+
+
