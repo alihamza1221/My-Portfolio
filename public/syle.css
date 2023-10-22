@@ -332,10 +332,51 @@ header a{
     margin-left: auto;
     margin-right: auto;
   }
-  .swiper-slide{
-    margin-left: auto;
-    margin-right: auto;
+  .swiper{
+    width: 100%;
+    height: 100%;
   }
+  .swiper-pagination{
+    position: static;
+    margin-top: 5px;
+  }
+ .swiper-button-next{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .swiper-button-prev{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .swiper-slide>img{
+     justify-self: center;
+     width: 320px;
+     border-radius: 0.5rem;
+     border: #868e96 solid 0.5px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 0 2.5rem;
+    align-items: center;
+    gap: 3rem;
+  }
+  .project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-family:"Montserrat",sans-serif;
+    font-weight: 600;
+    color: #868e96;
+  }
+    .project-content h3{
+      color: #3e3e3f;
+    }
+
+
 
 @keyframes slideup {
     0% {
