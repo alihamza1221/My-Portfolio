@@ -331,6 +331,7 @@ header a{
     width: 768px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
   .swiper{
     width: 100%;
@@ -343,10 +344,12 @@ header a{
  .swiper-button-next{
     font-size: 30px;
     font-weight: bold;
+    right: -3.5rem;
   }
   .swiper-button-prev{
     font-size: 30px;
     font-weight: bold;
+    left: -3.5rem;
   }
   .swiper-slide>img{
      justify-self: center;
