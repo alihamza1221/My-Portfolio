@@ -422,20 +422,79 @@ header a{
 .contacts-form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr 0.8fr;
+    grid-template-rows: 1fr 1fr 2fr 0.8fr;
     column-gap: 2rem;
     row-gap: 1rem;
 }
-.contacts-form div{
-  border: 1px solid blue;
+.contacts-form .message{
+  border: 1.2px solid #1DA1F2;
+  border-radius: 0.5rem;
+  background-color: #1da0f297;
 }
-.middle{
+.contacts-form div{
+    border: 2px solid #1DA1F2;
+    border-radius: 0.5rem;
+}
+.message{
     grid-area: 3/1/4/3;
 }
-.text{
+.subject{
     grid-area: 2/1/3/3;
 }
-   
+.message-text{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.subject{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+ .send-btn{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+.message-text textarea{
+    height: 100%;
+    padding: 0.3rem 0.5rem 0.5rem 0.75rem;
+}
+.message-text textarea:focus + .message-text {
+    border: 1px solid #1DA1F2;
+}
+.contacts-form{
+    font-family:"Montserrat",sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+     color: #3e3e3f;
+}
+.contacts-form label{
+   font-weight: bolder;
+   color:#000;
+   padding: 0.3rem 0.5rem 0.5rem 0.75rem;
+}
+.style-text{
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 0.75rem;
+    padding-top: 0.4rem;
+    outline: none;
+    font-weight: 600;
+    font-family:"Montserrat",sans-serif;
+    font-size: 15px;
+    color: #868e96;
+} 
+[class="style-text"][name="subject"] {
+   padding-top: 0;
+}
+
+
 
 @keyframes slideup {
     0% {
