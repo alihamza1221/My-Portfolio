@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -54,6 +58,7 @@ header a{
     animation: slideup 1000ms ease-in 0s 1  both;
 }
 
+
 .aboutSection{
     display: flex;
     flex-direction: column;
@@ -66,6 +71,18 @@ header a{
     font-family:"Montserrat",sans-serif;
     line-height: 1.1;
     flex: 1 1;
+}
+.autoplay-text{
+    font-size: 30px;
+    font-family:"Montserrat",sans-serif;
+    font-weight: 600;
+    color: #868e96;
+}
+.autoplay{
+    font-size: 30px;
+    font-family:"Montserrat",sans-serif;
+    font-weight: 600;
+    color: #868e96;
 }
 .devsvg{
     width: 50%;
@@ -113,11 +130,12 @@ header a{
 .aboutWork{
     display: flex;
     margin: 7%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 .workstats{
-    width: 64%;
+    min-width: 50%;
 }
 .workstats h1{
   font-family:"Montserrat",sans-serif;
@@ -130,21 +148,16 @@ header a{
     font-weight: 600;
     font-size: 24px;
 }
-.animation-container{
-    width: 50%;
-}
 .text-tag{
-   
     display: grid;
-    grid-template-columns: repeat(7,100px);
+   grid-template-columns:  repeat(auto-fill, minmax(60px, 1fr));
     gap: 20px;
 }
 .text-tag div{
     text-align: center;
 }
 .animation-container img{
-    width: 500px;
-    margin-left: -7%;    
+    width: 100%;   
 }
 
 /*proficency and skills section  */
@@ -403,7 +416,7 @@ header a{
 
 .contact-me{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 0.5fr 1.5fr;
     gap: 2rem;
     width: 768px;
     margin-left: auto;
@@ -416,7 +429,7 @@ header a{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 100%;
+    width: 50%;
     align-items: flex-end;
 }
 .contacts-form{
@@ -429,11 +442,11 @@ header a{
 .contacts-form .message{
   border: 1.2px solid #1DA1F2;
   border-radius: 0.5rem;
-  background-color: #1da0f297;
 }
 .contacts-form div{
     border: 2px solid #1DA1F2;
     border-radius: 0.5rem;
+    background-color: #34b1ff6b;
 }
 .message{
     grid-area: 3/1/4/3;
@@ -461,7 +474,7 @@ header a{
     align-items: center;
 }
 .message-text textarea{
-    height: 100%;
+    resize: vertical;
     padding: 0.3rem 0.5rem 0.5rem 0.75rem;
 }
 .message-text textarea:focus + .message-text {
@@ -479,6 +492,7 @@ header a{
    padding: 0.3rem 0.5rem 0.5rem 0.75rem;
 }
 .style-text{
+    height: 100%;
     width: 100%;
     border-radius: 0.5rem;
     border: none;
@@ -489,11 +503,23 @@ header a{
     font-family:"Montserrat",sans-serif;
     font-size: 15px;
     color: #868e96;
+    background-color: #34b1ff00;
 } 
 [class="style-text"][name="subject"] {
    padding-top: 0;
 }
-
+ .diplay-flex-vertical{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+ }
+ .total-height{
+    max-height: 200px;
+ }
+ .btn-{
+    background-color: transparent!important;
+ }
 
 
 @keyframes slideup {
@@ -507,5 +533,20 @@ header a{
     }
   }
   
+ /* media query */
 
+ @media screen and (max-width: 910px ) {
+    .aboutWork{
+        flex-direction: column;
+        align-items: center;
+    }
+    .animation-container{
+        width: 100%;
+    }
+    .text-tag{
+      display: grid;
+       grid-template-columns:  repeat(auto-fill, minmax(60px, 1fr));
+        gap: 20px;
+    }
+ }
 

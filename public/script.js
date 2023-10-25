@@ -45,4 +45,10 @@ const swiper = new Swiper('.swiper', {
 
   });
 
-  
+  //text autoplay in the name animation
+  const typed = new Typed('.autoplay-text', {
+    strings:["Web Developer","Freelancer","Programmer"],
+    typeSpeed: 100,
+    backSpeed:100,
+    loop:true,
+  });
