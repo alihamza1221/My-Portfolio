@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,
 body {
   height: 100%;
 }
@@ -256,7 +255,7 @@ header a{
 }
 .Educational-background >p{
     font-family: "Montserrat",sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 3rem;
@@ -280,13 +279,13 @@ header a{
     gap: 0.4rem;
 }
 
-.experience-box{
-    width: 55%;
-    height: 70%;
+.experience-box {
     display: grid;
-    grid-template-rows: 1fr max-content 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr max-content 1fr;
     justify-content: center;
+    grid-column-gap: 10%;
+    width: 80%;
 }
 .mid-line {
     display: flex; 
@@ -535,18 +534,81 @@ header a{
   
  /* media query */
 
- @media screen and (max-width: 910px ) {
+ @media screen and (max-width: 1000px ) {
+
+    .home {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .devsvg {
+        width: 90%;
+        max-height: 100%;
+    }
+    .aboutSection {
+        width: 90%;
+        padding-left: 0% !important;
+    }
+
     .aboutWork{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .animation-container{
+        display: none;
         width: 100%;
     }
     .text-tag{
       display: grid;
-       grid-template-columns:  repeat(auto-fill, minmax(60px, 1fr));
+      grid-template-columns:  repeat(auto-fill, minmax(60px, 1fr));
         gap: 20px;
+    }
+    .workstats{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+     
+    .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .left-skills-container {
+        width: 100%;
+    }
+    .right-animation-container {
+        width: 100%;
+    }
+    .skills-bar {
+        width: 100%;
+    }
+    .skills-img {
+        width: 100%;
+        padding-top: 0%; 
+        margin-left: 0%;
+    }
+
+
+    .heading-edu {
+        font-size: 6vw;
+    }
+    .btns {
+        margin: 0rem;
+    }
+    .header-edu-exp{
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .experience-box {
+        max-width: 510px;
+        width: auto;
+        height: 100%;
+        padding: 0.7rem;
     }
  }
 
