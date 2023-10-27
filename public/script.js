@@ -7,19 +7,20 @@ const dark_icons = [icon_edu.src , icon_exp.src];
 //content toggle
 const educontent = document.querySelector('#edu-content');
 const expcontent = document.querySelector('#work-content');
+
 edustats.addEventListener('click', ()=>{
     expstats.classList.remove('clicked');
     icon_exp.setAttribute('src',dark_icons[1]);
     expcontent.classList.add('d-none');
     educontent.classList.remove('d-none');
     
-    icon_edu.setAttribute('src','./images/experience section/icons8-education-48 (1).png');
+    icon_edu.setAttribute('src',dark_icons[0]);
     edustats.classList.add('clicked');
 });
 
 expstats.addEventListener('click', ()=>{
     edustats.classList.remove('clicked');
-    icon_edu.setAttribute('src',dark_icons[0]);
+    icon_edu.setAttribute('src','./images/experience section/icons8-education-48.png');
     expcontent.classList.remove('d-none');
     educontent.classList.add('d-none');
     
@@ -52,3 +53,49 @@ const swiper = new Swiper('.swiper', {
     backSpeed:100,
     loop:true,
   });
+
+const navbar = document.querySelector('.navbar');
+const hamberger_menu = document.querySelector('.hamberger-menu');
+const exit = document.querySelector('.exit');
+
+
+hamberger_menu.addEventListener('click',()=>{
+   navbar.classList.add('navbar-active');
+    exit.style.display = "block";
+    hamberger_menu.style.display = "none";
+});
+
+exit.addEventListener('click',()=>{
+  navbar.classList.remove('navbar-active');
+   exit.style.display = "none";
+   hamberger_menu.style.display = "block";
+});
+
+//scroll button
+
+const firstpage = document.querySelector('.about-section');
+const scrollbtn = document.querySelector('.slide-up');
+
+
+const handleScroll = ()=>{
+  const scrolly = window.scrollY;
+  const landing_page_height = firstpage.offsetHeight;
+
+  if(scrolly >landing_page_height){
+    scrollbtn.style.display = 'block';
+  }
+  else{
+    scrollbtn.style.display = 'none';
+  }
+}
+window.addEventListener('scroll',handleScroll);
+const beforeHoverHtml = scrollbtn.innerHTML;
+
+scrollbtn.addEventListener('mouseOver',()=>{
+  scrollbtn.innerHTML = '<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-up.png" alt="circled-chevron-up"/>'
+});
+
+scrollbtn.addEventListener('moudeout',()=>{
+  scrollbtn.innerHTML = beforeHoverHtml;
+})
+
