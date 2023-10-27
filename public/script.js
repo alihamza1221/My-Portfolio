@@ -73,7 +73,7 @@ exit.addEventListener('click',()=>{
 
 //scroll button
 
-const firstpage = document.querySelector('.about-section');
+const firstpage = document.querySelector('.home');
 const scrollbtn = document.querySelector('.slide-up');
 
 
@@ -81,7 +81,7 @@ const handleScroll = ()=>{
   const scrolly = window.scrollY;
   const landing_page_height = firstpage.offsetHeight;
 
-  if(scrolly >landing_page_height){
+  if(scrolly >landing_page_height/2.3){
     scrollbtn.style.display = 'block';
   }
   else{
@@ -89,13 +89,26 @@ const handleScroll = ()=>{
   }
 }
 window.addEventListener('scroll',handleScroll);
-const beforeHoverHtml = scrollbtn.innerHTML;
+let originalHtml;
 
-scrollbtn.addEventListener('mouseOver',()=>{
+scrollbtn.addEventListener('mouseover',()=>{
+  originalHtml =scrollbtn.innerHTML;
   scrollbtn.innerHTML = '<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-up.png" alt="circled-chevron-up"/>'
 });
 
-scrollbtn.addEventListener('moudeout',()=>{
-  scrollbtn.innerHTML = beforeHoverHtml;
+scrollbtn.addEventListener('mousedown',()=>{
+  scrollbtn.innerHTML = originalHtml;
+  console.log('hover');
 })
+
+//scrollup
+
+scrollbtn.addEventListener('click',()=>{
+  const offsetTop = firstpage.offsetTop;
+  const scrollDuration = 1000;
+  window.scrollTo({
+    top: offsetTop,
+    behavior: 'smooth',
+  });
+});
 
