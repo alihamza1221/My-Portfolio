@@ -7,6 +7,8 @@ const dark_icons = [icon_edu.src , icon_exp.src];
 //content toggle
 const educontent = document.querySelector('#edu-content');
 const expcontent = document.querySelector('#work-content');
+document.addEventListener('DOMContentLoaded', () => {
+  // Your JavaScript code here
 
 edustats.addEventListener('click', ()=>{
     expstats.classList.remove('clicked');
@@ -89,26 +91,19 @@ const handleScroll = ()=>{
   }
 }
 window.addEventListener('scroll',handleScroll);
-let originalHtml;
 
-scrollbtn.addEventListener('mouseover',()=>{
-  originalHtml =scrollbtn.innerHTML;
-  scrollbtn.innerHTML = '<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-up.png" alt="circled-chevron-up"/>'
-});
 
-scrollbtn.addEventListener('mousedown',()=>{
-  scrollbtn.innerHTML = originalHtml;
-  console.log('hover');
-})
+
 
 //scrollup
 
 scrollbtn.addEventListener('click',()=>{
-  const offsetTop = firstpage.offsetTop;
+
   const scrollDuration = 1000;
   window.scrollTo({
-    top: offsetTop,
+    top: 0,
     behavior: 'smooth',
   });
 });
 
+});

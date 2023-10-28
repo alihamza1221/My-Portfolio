@@ -161,6 +161,32 @@ header a{
 .text-tag div{
     text-align: center;
 }
+.animation-container{
+   animation: slide-left 1000ms ease-in 0 1 both;
+}
+.workstats{
+    animation: slide-right 1000ms ease-in 0 1  both;
+}
+@keyframes slide-left {
+    0%{
+        transform: translate(-120%);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes slide-right {
+    0%{
+        transform: translate(120%);
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
 .animation-container img{
     width: 100%;   
 }
