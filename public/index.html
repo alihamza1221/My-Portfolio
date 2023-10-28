@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/Favicon.png" type="image/x-icon" />
     <link
   rel="stylesheet"
@@ -12,7 +13,7 @@
     <title>Ali Hamza</title>
   </head>
   <body>
-    <header>
+    <header id="Home">
       <div class="nav-menu">
       <a class="logo-name" href="#"> < Ali Hamza /></a>
       <div class="menu">
@@ -23,12 +24,12 @@
       </div>
       <nav class="navbar">
         
-        <a class="nav-item Home" href="#">Home</a>
-        <a class="nav-item about" href="#">About</a>
-        <a class="nav-item skills" href="#">Skills</a>
-        <a class="nav-item xperience" href="#">Experience</a>
-        <a class="nav-item resume" href="#">Resume</a>
-        <a class="nav-item contact" href="#">Contact Me</a>
+        <a class="nav-item Home" href="#Home">Home</a>
+        <a class="nav-item about" href="#About">About</a>
+        <a class="nav-item skills" href="#Skills">Skills</a>
+        <a class="nav-item xperience" href="#Experience">Experience</a>
+        <a class="nav-item resume" href="#Resume">Resume</a>
+        <a class="nav-item contact" href="#Contact-me">Contact Me</a>
      
       </nav>
       
@@ -36,7 +37,7 @@
 
     <!-- main -->
     
-      <section class="home">
+      <section class="home" >
         <div class="aboutSection">
           <h1>Hi, I am Ali Hamza</h1>
           <h2 class="autoplay">I' am a <span class="autoplay-text"></span></h2>
@@ -49,7 +50,7 @@
 
           <div class="icons">
             <div class="github">
-              <a href="https://github.com/alihamza1221/alihamza1221"
+              <a  target="_blank" href="https://github.com/alihamza1221/alihamza1221"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 72 72"
@@ -61,7 +62,7 @@
                   /></svg   ></a>
             </div>
             <div class="linkedin">
-              <a href=""
+              <a target="_blank" href="https://www.linkedin.com/in/ali-hamza-0a139128a/"
                 ><?xml version="1.0" encoding="iso-8859-1"?><svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -87,7 +88,7 @@
                   /></svg   ></a>
             </div>
             <div class="gmail">
-              <a href="mailto:alihamza77065@gmail.com"
+              <a target="_blank" href="mailto:alihamza77056@gmail.com"
                 ><?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +115,7 @@
                   /></svg ></a>
             </div>
             <div class="twitter">
-              <a href="">
+              <a target="_blank" href="https://twitter.com/twistxAli">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 48 48"
@@ -150,13 +151,19 @@
           ></dotlottie-player>
         </div>
       </section>
-      <section class="aboutWork">
-        <div class="animation-container">
+      <div class="slide-up" style="cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
+        style="fill:#000000;">
+        <g fill-opacity="0.92941" fill="#1da1f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.68359,0 -23,10.31641 -23,23c0,12.68359 10.31641,23 23,23c12.68359,0 23,-10.31641 23,-23c0,-12.68359 -10.31641,-23 -23,-23zM35.70703,28.70703c-0.19531,0.19531 -0.44922,0.29297 -0.70703,0.29297c-0.25781,0 -0.51172,-0.09766 -0.70703,-0.29297l-9.29297,-9.29297l-9.29297,9.29297c-0.39062,0.39063 -1.02344,0.39063 -1.41406,0c-0.39062,-0.39062 -0.39062,-1.02344 0,-1.41406l10,-10c0.39063,-0.39062 1.02344,-0.39062 1.41406,0l10,10c0.39063,0.39063 0.39063,1.02344 0,1.41406z"></path></g></g>
+        </svg>
+      </div>
+      <section class="aboutWork" id="About">
+        <div class="animation-container " data-aos="fade-up">
           <img src="./images/devtop.gif" alt="Development" />
         </div>
 
-        <div class="workstats">
-          <h1>What I do?</h1>
+        <div class="workstats " data-aos="fade-up">
+          <h1 id="About">What I do?</h1>
           <p>
             A highly motivated full-stack developer determined to bring
             substantial value to the tech sector through my expertise and skills
@@ -236,7 +243,7 @@
             </div>
             <div class="css">
               <i
-                ><?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg
+                ><?xml version="1.0" encoding="utf-8"?><svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 48 48"
@@ -260,7 +267,7 @@
             </div>
             <div class="javascript">
               <i
-                ><?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg
+                ><?xml version="1.0" encoding="iso-8859-1"?><svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 48 48"
@@ -320,7 +327,7 @@
             </div>
             <div class="node-js">
               <i
-                ><?xml version="1.0" encoding="iso-8859-1"?><!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg
+                ><?xml version="1.0" encoding="iso-8859-1"?><svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 48 48"
@@ -592,8 +599,8 @@
         </div>
       </section>
       <!-- proficenacy and skills -->
-      <section class="proficenacy-container d-flex">
-        <div class="left-skills-container">
+      <section class="proficenacy-container d-flex" id="Skills">
+        <div class="left-skills-container" data-aos="fade-right">
           <h1 class="proficenacy">Proficenacy</h1>
           <div class="skills-bar">
             <p>Frontend</p>
@@ -623,7 +630,7 @@
         </div>
        </section>
         <!-- Qualifications -->
-        <section class="Education d-flex">
+        <section class="Education d-flex" data-aos="zoom-in" id="Experience">
          <div class="Educational-background">
           <h2 class="heading-edu">Educational Background</h2>
           <p>My Experience and Education</p>
@@ -640,16 +647,11 @@
               </div>
           </div>
           <!-- education -->
-          <div class="slide-up" style="cursor: pointer;">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256"
-            style="fill:#000000;">
-            <g fill-opacity="0.92941" fill="#1da1f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.68359,0 -23,10.31641 -23,23c0,12.68359 10.31641,23 23,23c12.68359,0 23,-10.31641 23,-23c0,-12.68359 -10.31641,-23 -23,-23zM35.70703,28.70703c-0.19531,0.19531 -0.44922,0.29297 -0.70703,0.29297c-0.25781,0 -0.51172,-0.09766 -0.70703,-0.29297l-9.29297,-9.29297l-9.29297,9.29297c-0.39062,0.39063 -1.02344,0.39063 -1.41406,0c-0.39062,-0.39062 -0.39062,-1.02344 0,-1.41406l10,-10c0.39063,-0.39062 1.02344,-0.39062 1.41406,0l10,10c0.39063,0.39063 0.39063,1.02344 0,1.41406z"></path></g></g>
-            </svg>
-          </div>
+          
         <div id="edu-content" class="experience-box">
            
           <div class="left-content">
-            <span class="SE exp-style">BS Software Engineering</span>
+            <p class="SE exp-style">BS Software Engineering</p>
             <a class="exp-style-b" href="#">Comsats University,Lahore</a>
             <div class="date"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12" height="12" viewBox="0,0,256,256"
               style="fill:#000000;">
@@ -670,7 +672,7 @@
             <div class="straight-line"></div>
           </div>
           <div class="right-content">
-            <span class="exp-style Higher Secondary School">Higher Secondary School Certificate</span>
+            <p class="exp-style Higher Secondary School">Higher Secondary School Certificate</p>
             <a class="exp-style-b" href="#"> Muslim College</a>
             <div class="date"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12" height="12"  viewBox="0,0,256,256"
               style="fill:#000000;">
@@ -681,7 +683,7 @@
           </div>
 
           <div class="left-content">
-            <span class=" exp-style Secondary School">Secondary School Certificate</span>
+            <p class=" exp-style Secondary School">Secondary School Certificate</p>
             <span class="exp-style-b">New Leads Acedemy</span>
             <div class="date"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="12" height="12" 
               viewBox="0,0,256,256"
@@ -752,7 +754,7 @@
 </div>
       </section>
 
-      <section class="slider">
+      <section class="slider" id="Resume">
         <!-- Slider main container -->
         <div class="projects">
           <p>Projects</p>
@@ -812,13 +814,13 @@
   <div class="swiper-button-next"></div>
 </div>
       </section>
-    
-    <div class="contact-me">
+    <p class="contact-me-p" id="Contact-me">Contact Me</p>
+    <div class="contact-me" >
          <div class="col"> 
          
           <div class="vertical-align soical-icons">
             <div class="github">
-              <a href="https://github.com/alihamza1221/alihamza1221"
+              <a target="_blank" href="https://github.com/alihamza1221/alihamza1221"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 72 72"
@@ -830,7 +832,7 @@
                   /></svg   ></a>
             </div>
             <div class="linkedin">
-              <a href=""
+              <a target="_blank" href="https://www.linkedin.com/in/ali-hamza-0a139128a/"
                 ><?xml version="1.0" encoding="iso-8859-1"?><svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -883,7 +885,7 @@
                   /></svg ></a>
             </div>
             <div class="twitter">
-              <a href="">
+              <a target="_blank" href="https://twitter.com/twistxAli">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 48 48"
@@ -934,15 +936,41 @@
           </div>
         </form>
       </div>
-    
+       
 
     <footer>
-
+      <div class="footer-bg">
+        <p>Get In Touch With Me</p>
+        <div class="flex-conainer-footer">
+          <div class="personal-contacts-left">
+            <h4>Ali Hamza</h4>
+            <p>Discuss a Project Idea.Inbox is open for All🤟</p>
+            <span>Pakistan</span>
+            <span>I am open for opportunities</span>
+            <a class="mail-btn" href="mailto:alihamza77065@gmail.com"><button class="btn mail-button">Send Email</button></a>
+          </div>
+        <div class="img-footer-right">
+          <img src="./images/Black and Gold Simple Business Man LinkedIn Profile Picture-photoaidcom-cropped.png" alt="profile image">
+        </div>
+        </div>
+        <div class="copyright">
+          &copy; Made with ❤️ by Ali Hamza 
+        </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script.js" type="text/javascript"></script>
+<script src="./animate.js" type="text/javascript"></script> 
+<!-- scropt aos -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    offset: 400,
+    duration: 900,
+});
+</script>
   </body>
 </html>
